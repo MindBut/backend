@@ -1,6 +1,6 @@
 from typing import List
 from fastapi import APIRouter
-from models.moodRecords import moodRecord
+from models.models import moodRecord
 from config.database import moodRecord_collection
 from schema.schemas import record_moodRecords
 from bson import ObjectId
