@@ -1,12 +1,10 @@
 from fastapi import FastAPI
-
+from moodRecords.route import router  
 import uvicorn
 
 app = FastAPI()
 
-@app.get("/test")
-def test():
-    return "hello"
+app.include_router(router) 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", prot=8000, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)  
