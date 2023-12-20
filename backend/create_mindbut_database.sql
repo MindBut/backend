@@ -1,5 +1,5 @@
-#CREATE DATABASE mindbut;
-#use mindbut;
+CREATE DATABASE mindbut;
+use mindbut;
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_kakaotalk` varchar(100) DEFAULT NULL,
