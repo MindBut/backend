@@ -2,7 +2,7 @@ from openai import OpenAI
 
 def moodtracking_model(prompt : str):
 
-    client = OpenAI(api_key = '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')
+    client = OpenAI(api_key = '')
 
     client.fine_tuning.jobs.list(limit = 5)
     
