@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 def counsel_model(chatting_user: str):
-    client = OpenAI(api_key = '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')
+    client = OpenAI(api_key = '')
 
     client.fine_tuning.jobs.list(limit = 5)
 
